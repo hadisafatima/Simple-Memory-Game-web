@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reponsiveness.css">
+    <!-- underneath is a link to connect the font awesome icons' to the page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="homepage">
+        <section>
+            <video src="smoke.mp4" autoplay muted></video>
+            <h1>
+                <span>M</span>
+                <span>E</span>
+                <span>M</span>
+                <span>O</span>
+                <span>R</span>
+                <span>Y</span>
+                <span>G</span>
+                <span>A</span>
+                <span>M</span>
+                <span>E</span>
+            </h1>
+        </section>
+        <button id="playbutton" onclick="removeHome()">Play</button>
+    </div>
+                                   <!-- HOMEPAGE ENDS -->
+
+    <div id="timer">
+        <span id="timeLimit">Remaining time : </span>
+        <div id="time"> 60</div>
+        <span id="sec"> s</span>
+    </div>
+
+    <section id="cardsTemplate">
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?sky/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?cartoons" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?tea/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?cutecats" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?aesthetics/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?laptops/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?tea/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?progrmmers/web-development" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?sky/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?cricket/sports/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?cricket/sports/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?laptops/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?progrmmers/web-development" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?aesthetics/dark" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?cutecats" alt=""></div>
+        <div class="grid-item cardFace" onclick="rotateCard(this, event)"><img src="https://source.unsplash.com/165x165/?cartoons" alt=""></div>
+        <!-- (1, 9)* (15, 4)* (8, 13)* (2, 16)* (3, 7)* (10, 11)* (5, 14)* (6, 12) -->
+                                      <!-- Cards set -->
+    </section>
+
+    <div id="won">
+        <p>Congratulations, you Won!!</p>
+        <span class="icon"><i class="fa fa-repeat" aria-hidden="true" onclick="replay()"></i></span>
+    </div>
+    
+    <div id="lose">
+        <p>Time is up!! You lose</p>
+        <span class="icon"><i class="fa fa-repeat" aria-hidden="true" onclick="replay()"></i></span>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>

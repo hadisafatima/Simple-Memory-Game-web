@@ -1,0 +1,176 @@
+@media screen and (max-width : 428px) {
+    h1{
+        font-size: 2em ;
+    }   
+
+    body{
+        overflow: hidden;
+    }
+
+    #playbutton {
+        top: 57% ;
+        width: 25vw ;
+        height: 5vh ;
+        right: 37.7% ;
+    }
+
+    #cardsTemplate {
+       margin: 10vh 6vw;
+       padding: 1vh;
+       grid-template-columns: repeat(2, 1fr); /*first argument represents the num of times the patterns must repeat and 1fr shows that all the columns must be of same size*/
+       grid-template-rows: repeat(8, 1fr);
+       height: 89vh;
+       width: 88%;
+       position: relative;
+       top: 0vh;
+    }
+
+    .grid-item {
+        padding: 2vh;
+        margin: 0vh;
+        padding: 0vh;
+        height: 10vh;
+    }
+
+    #timer {
+        font-size: 1.2em;
+        position: relative;
+        top: 5vh;
+    }
+
+    #time {
+        position: relative;
+        top: -2vh;
+        left: 13vw;
+    }
+
+    #sec {
+        position: relative;
+        top: -2vh;
+        left: 12vw;
+    }
+    
+    #lose p {
+        text-align: center;
+        font-size: 1.8em;
+        top: 4vh;
+    }
+    #won , #lose{
+        width: 26vh;
+        margin: 40vh 22vw;
+    }
+
+    #lose span .fa{
+        left: 21vw;
+    }
+
+}
+
+
+@media (min-width : 429px) and (max-width : 900px) {
+    h1 {
+        font-size: 7em;
+    }
+
+    #playbutton {
+        top: 66%;
+        width: 17vw;
+        height: 7vh;
+        right: 40.7%;
+    }
+
+    #cardsTemplate{
+        position: relative;
+        top: 4vh;
+    }
+
+    .grid-item{
+        margin: 0.5vh 0.5vh;
+    }
+    
+    .grid-item img{
+        object-position: 50% 100%;
+    }
+
+    #timer{
+        top: 5vh;
+        font-size: 1.7em;
+        width: 0vw;
+        left: 74vw;
+    }
+
+    #time {
+        position: relative;
+        top: -2.5vh;
+        left: 9vw;
+    }
+    
+    #sec {
+        position: relative;
+        top: -5.5vh;
+        left: 12vw;
+    }      
+
+    #won, #lose{
+        width: 32vw;
+        margin: 40vh 36vw;
+    }
+
+    #lose span .fa {
+        left: 6vw;
+    }
+}
+
+@media screen and (min-width : 901px) and (max-width : 1000px) {
+    h1{
+        font-size: 8em;
+    }
+
+    #timer {
+        width: 31vw;
+        left: 60vw;
+    }
+
+    #playbutton{
+        width: 15vw;
+        right: 42.7%;
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width : 1001px) and (max-width : 1100px) {
+    h1{
+        font-size: 9em;
+    }
+
+    #timer{
+        width: 28vw;
+        left: 63vw;
+    }
+
+    #playbutton{
+        width: 16vw;
+        height: 7vh;
+        font-size: 2em;
+        right: 41.7%;
+    }
+}
+
+@media screen and (min-width : 1101px) and (max-width : 1300px) {
+    h1{
+        font-size: 10em;
+    }
+
+    #playbutton{
+        top: 72%;
+        height: 8vh;
+        width: 14vw;
+        right: 42.7%;
+        font-size: 2em;
+    }
+
+    #timer{
+        width: 26vw;
+        left: 64vw;
+    }
+}
